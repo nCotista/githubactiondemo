@@ -2,6 +2,7 @@ version: "3.8"
 services:
   my-app:
     image: ghcr.io/ncotista/auto-web-2:latest
+    platform: linux/amd64
     ports:
       - "8080:80"
 
