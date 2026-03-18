@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture The Flag: Cyber Workshop</title>
+    
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d1117; /* Dark background */
+            color: #c9d1d9; /* Light grey text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Center content and add spacing */
+        header, main, footer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Typography */
+        h1, h2 {
+            color: #39d353; /* Neon green accent */
+        }
+        
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #30363d;
+            margin: 20px 0;
+        }
+
+        /* Section Cards */
+        section {
+            background-color: #161b22;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #39d353;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+            border-radius: 4px;
+            font-family: inherit;
+            box-sizing: border-box; /* Ensures padding doesn't break width */
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #39d353;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #238636;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2ea043;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </head>
+<body>
+
+    <header>
+        <h1>Welcome to the Ultimate CTF Cyber Workshop</h1>
+        <p style="text-align: center;">Learn encryption, crack codes, and secure systems in our hands-on beginner workshop.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>What You Will Learn</h2>
+            <ul>
+                <li>The basics of cryptography and encryption algorithms</li>
+                <li>How to identify common web vulnerabilities</li>
+                <li>Hands-on practice in our simulated CTF environment</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Event Details</h2>
+            <p><strong>Date:</strong> Saturday, October 24th</p>
+            <p><strong>Time:</strong> 10:00 AM - 3:00 PM</p>
+            <p><strong>Location:</strong> Main University Computer Lab</p>
+        </section>
+
+        <section>
+            <h2>Register Now</h2>
+            <form action="/submit-registration" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="student@university.edu" required>
+
+                <label for="experience">Experience Level:</label>
+                <select id="experience" name="experience">
+                    <option value="beginner">Beginner (High School / 1st Year)</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <input type="submit" value="Secure My Spot">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tech Student Group. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:admin@example.com">admin@example.com</a></p>
+    </footer>
+
+</body>
+</html>
