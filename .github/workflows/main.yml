@@ -29,4 +29,4 @@ jobs:
           context: .
           push: true
           # 🟢 ใช้ github.repository_owner เพื่อให้โค้ดปรับตามชื่อ GitHub ของผู้เรียนอัตโนมัติ
-          tags: ghcr.io/ncotista/auto-web:latest
+          tags: ghcr.io/ncotista/auto-web-2:latest
